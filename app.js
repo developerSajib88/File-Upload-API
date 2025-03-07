@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 
-app.use(uploadRouter);
+app.use(uploadRouter, express.static("upload"));
 
 
 app.use(notFound);
