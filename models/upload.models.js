@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const uploadSchema = mongoose.Schema({
-    image: {
+    file: {
         type: String,
         require: [true, "Image not found!"]
     }
